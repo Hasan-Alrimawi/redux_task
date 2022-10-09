@@ -1,0 +1,15 @@
+<form class="flex" (ngSubmit)="saveData()">
+    <div>
+        <label for="ffirstName">First Name:</label>
+        <input type="text" name="FirstName" id="FirstName" [(ngModel)] = "this.user.firstName">
+    </div>
+    <div>
+        <label for="llastName">Last Name:</label>
+        <input type="text" name="lastName" id="lastName" [(ngModel)] = "this.user.lastName">
+    </div>
+    <div>
+        <label for="eemail">Email:</label>
+        <input type="text" name="email" id="email" placeholder="something@else.other" [(ngModel)] = "this.user.email">
+    </div>
+    <button type="submit">submit</button>
+</form>

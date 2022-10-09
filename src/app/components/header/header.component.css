@@ -1,0 +1,50 @@
+*{
+    box-sizing: border-box;
+}
+.listings1 {
+    color: black;
+    text-decoration: none;
+}
+.listings1:hover{
+    color: #eea302;
+}
+.viewNavBar {
+    margin-left: 1.2%;
+    width: fit-content;
+}
+.menus {
+    font-family: sans-serif;
+    text-decoration: none;
+    color: black;
+    padding: 0px 10px;
+}
+
+.menus:hover {
+    transition-duration: 0.3s;
+    color: #eea302;
+}
+#headerhome {
+    font-size: 22px;
+    font-weight: bold;
+    text-decoration: none;
+    font-family: sans-serif;
+    color: black;
+}
+.flexing {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 5000px;
+    justify-content: space-between;
+}
+.flexing.viewNavBar{
+    gap: 15px;
+}
+.titleFont{
+    font-size: 16px;
+    font-family: sans-serif;
+}
+#menusToTheRight{
+    text-align: center;
+    gap: 3px;
+}

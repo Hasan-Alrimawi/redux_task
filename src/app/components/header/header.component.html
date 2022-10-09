@@ -1,0 +1,10 @@
+<header class="flexing">
+    <section class="flexing viewNavBar">
+        <ul>
+            <li *ngFor="let dat of data | async">
+                <span>Name: {{dat.personalData.firstName}} {{dat.personalData.lastName}}</span>
+                <p>Email: {{dat.personalData.email}}</p>
+            </li>
+        </ul>
+    </section>
+</header>
