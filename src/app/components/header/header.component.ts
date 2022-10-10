@@ -1,9 +1,8 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { User } from 'src/app/app.component';
 import {Observable} from 'rxjs';
-import { State } from 'src/app/redux/submitAction';
-import { appState } from 'src/app/app.state';
+import { State } from 'src/app/redux/types.redux';
 import { Store } from '@ngrx/store';
+import { appState } from 'src/app/redux/types.redux';
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',

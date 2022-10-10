@@ -1,11 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { User } from 'src/app/app.component';
-
-import {Observable} from 'rxjs';
-import { State } from 'src/app/redux/submitAction';
-import { appState } from 'src/app/app.state';
+import { appState } from 'src/app/redux/types.redux';
 import { Store } from '@ngrx/store';
-import * as StoreActions from "../../actions/sample.action"
+import * as StoreActions from "../../redux/actions/sample.action"
 @Component({
   selector: 'app-form',
   templateUrl: './form.component.html',
@@ -15,7 +12,7 @@ export class FormComponent implements OnInit {
   user:User = new User("","","");
   constructor(private store: Store<appState>) { }
   changeData(user:User){
-    this.store.dispatch(new StoreActions.ChangeData({personalData:this.user}))
+    this.store.dispatch(new StoreActions.AddUser({personalData:this.user}));
   }
   ngOnInit(): void {
   }
